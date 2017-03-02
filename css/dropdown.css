@@ -1,0 +1,36 @@
+.dd {
+	display: inline-block;
+}
+.dd div {
+	cursor: pointer;
+	padding: 5px 10px;
+	background: #ccc;
+}
+.dd.expanded div {
+	color: #fff;
+	background: #333;
+}
+
+.dd ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	list-style: none;
+}
+.dd li {
+	cursor: pointer;
+	padding: 5px 20px;
+}
+.dd li:hover {
+	color: #fff;
+	background: #666;
+}
+
+.dd li[disabled] {
+	color: #ccc;
+	cursor: text;
+	background: none;
+}
+
+
