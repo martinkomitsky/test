@@ -6,7 +6,7 @@
 	var defaultOptions = {
 		cssSels: {
 			Main: {
-				textContainer: '.some-selector'
+				textContainer: '.some-selector',
 			},
 			button: '.change-text'
 		},
