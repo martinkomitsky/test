@@ -1,36 +1,56 @@
 .dd {
 	display: inline-block;
 }
-.dd div {
+
+.dd__button {
 	cursor: pointer;
 	padding: 5px 10px;
-	background: #ccc;
-}
-.dd.expanded div {
-	color: #fff;
-	background: #333;
+	color: white;
+	transition: background .4s ease;
 }
 
-.dd ul {
+.dd__button:hover {
+	background: #147fcb;
+}
+
+.dd_expanded .dd__button {
+	color: #fff;
+	background: #156ca9;
+}
+
+.dd__list {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 	list-style: none;
-}
-.dd li {
-	cursor: pointer;
-	padding: 5px 20px;
-}
-.dd li:hover {
-	color: #fff;
-	background: #666;
+	display: none;
+	background: white;
 }
 
-.dd li[disabled] {
+.dd_expanded .dd__list {
+	display: block;
+}
+
+.dd__item {
+	cursor: pointer;
+	padding: 5px 20px;
+	background: white;
+	transition: background .4s ease;
+}
+
+.dd__item:hover {
+	color: #fff;
+	background: #147fcb;
+}
+
+.dd__item[disabled] {
 	color: #ccc;
-	cursor: text;
+	cursor: default;
 	background: none;
 }
 
-
+.dd__item_active {
+	background: #179af8;
+	color: white;
+}
