@@ -6,7 +6,6 @@
 	const defaultOptions = {
 		cssSels: {
 			Main: {
-				textContainer: '.some-selector',
 				ddContainer: '.dd',
 				list: '.dd__list'
 			},
@@ -70,8 +69,9 @@
 			this.state = newState;
 		},
 		/**
+		 * Устанавливает новое состояние элементу списка
 		 * @param {boolean} newState Новое состояние
-		 * @param {string} id Порядковый номер элемента
+		 * @param {string} id Порядковый номер элемента списка
 		 */
 		changeInnerState (newState, id) {
 			this.innerState[id] = newState;
@@ -84,8 +84,8 @@
 			return this.state;
 		},
 		/**
-		 * Возвращает состояние элемента
-		 * @param {string} id Порядковый номер элемента
+		 * Возвращает состояние элемента списка
+		 * @param {string} id Порядковый номер элемента списка
 		 * @returns {boolean}
 		 */
 		getInnerState (id) {
@@ -112,7 +112,7 @@
 		 * @param {object} el Элемент списка
 		 */
 		toggleDropdownElement (el) {
-			let id = el.getAttribute('id');
+			const id = el.getAttribute('id');
 			let state = this.getInnerState(id);
 			this.changeInnerState(!state, id);
 
