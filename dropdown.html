@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Dropdown — тестовое задание</title>
-	<link rel="stylesheet" href="css/dropdown.css" />
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dropdown — тестовое задание</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/dropdown.css" />
+	</head>
+	<body id="page">
+		<div class="page__toolbar toolbar">
+			<div class="toolbar__dd dd-one js-dd">
+				<!-- Верстка дропдауна -->
+				<div class="dd">
+					<div class="dd__button">Menu</div>
+					<div class="dd__list-container">
+						<ul class="dd__list">
+							<li class="dd__item">Item 1</li>
+							<li class="dd__item" disabled="true">Item 2</li>
+							<li class="dd__item"><b>Item 3</b></li>
+							<li class="dd__item">
+								<i><a href="https://ht.mail.ru/" target="_blank">Item 4</a></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- / Верстка дропдауна -->
+			</div>
 
+			<div class="toolbar__dd dd-two js-dd">
+				<!-- Верстка дропдауна -->
+				<div class="dd">
+					<div class="dd__button">Lorem</div>
+					<div class="dd__list-container">
+						<ul class="dd__list">
+							<li class="dd__item">Lorem ipsum</li>
+							<li class="dd__item">Lorem ipsum dolor</li>
+							<li class="dd__item" disabled="true"><b>Lorem ipsum dolor sit</b></li>
+							<li class="dd__item">
+								<i><a href="https://e.mail.ru/" target="_blank">Mael.su</a></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- / Верстка дропдауна -->
+			</div>
 
-<!-- Верстка дропдауна -->
-<div class="dd expanded">
-	<div>Menu</div>
-	<ul>
-		<li>item 1</li>
-		<li disabled="true">item 2</li>
-		<li><b>item 3</b></li>
-		<li><i><a href="https://e.mail.ru/" target="_blank">item 4</a></i></li>
-	</ul>
-</div>
-<!-- / Верстка дропдауна -->
+			<div class="toolbar__dd dd-three js-dd">
+				<!-- Верстка дропдауна -->
+				<div class="dd">
+					<div class="dd__button">Lorem 2</div>
+					<div class="dd__list-container">
+						<ul class="dd__list">
+							<li class="dd__item" disabled="true">Lorem ipsum 2</li>
+							<li class="dd__item">Lorem ipsum dolor 2</li>
+							<li class="dd__item"><b>Lorem ipsum dolor sit 2</b></li>
+							<li class="dd__item">
+								<i><a href="https://vk.com/" target="_blank">vk.tu</a></i>
+							</li>
+							<li class="dd__item">Lorem ipsum dolor sit amet 2</li>
+							<li class="dd__item">Lorem ipsum dolor sit amet, consectetur 2</li>
+						</ul>
+					</div>
+				</div>
+				<!-- / Верстка дропдауна -->
+			</div>
+		</div>
 
+		<div class="page__console">
+			<div class="console">
+				<h4 class="console__title">Last active button</h4>
+				<span class="console__element js-console-el">None</span>
+			</div>
+		</div>
 
-<!-- Необходимые для работы скрипты -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/basic.js"></script>
-<script src="js/tools.Callbacks.js"></script>
-<script src="js/constructors.js"></script>
-<!-- / Необходимые для работы скрипты -->
+		<!-- Необходимые для работы скрипты -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/basic.js"></script>
+		<script src="js/tools.Callbacks.js"></script>
+		<script src="js/constructors.js"></script>
+		<!-- / Необходимые для работы скрипты -->
 
-<!-- Ваши скрипты -->
-<!-- TODO -->
-<!-- / Ваши скрипты -->
-
-</body>
+		<!-- Ваши скрипты -->
+		<script src="js/Dropdown.js"></script>
+		<script src="js/initDropdown.js"></script>
+		<!-- / Ваши скрипты -->
+	</body>
 </html>

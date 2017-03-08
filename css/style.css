@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.page__toolbar {
+	background: #168de2;
+	padding: 10px 15px;
+}
+
+.toolbar__dd {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.page__console {
+padding: 10px 15px;
+}
+
+.console {
+width: 250px;
+border: 1px solid #168de2;
+padding: 10px 15px;
+}
